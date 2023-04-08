@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'MyFont';
+    src: url('assets/fonts/HelveticaNeueLT Arabic 75 Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+  font-family:"lightFont" ;
+  src: url('assets/fonts/helvetica-neue-lt-arabic-45-light.ttf');
+}
+  *{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  body{
+    margin:0px;
+    padding: 0px;
+    // background-color: #0c0b38;
+    background-color: #070626;
+  }
