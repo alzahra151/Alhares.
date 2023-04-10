@@ -1,14 +1,14 @@
 
-.navbar{
-    position:absolute;
-    top:3px;
-    left:27%;
-    right: 27%; 
-     z-index: 10;
-     .collapse{
-      z-index: 1000;
-     }
-};
+// .navbar{
+//     position:absolute;
+//     top:3px;
+//     left:27%;
+//     right: 27%; 
+//      z-index: 10;
+//      .collapse{
+//       z-index: 1000;
+//      }
+// };
 .carousel{
     position: relative;
 }
@@ -51,6 +51,7 @@
 .controlContainer{
     background-color: #070626;
     // border-bottom :1px solid 
+    margin: 20px;
 }
 .indicators{
     z-index: 5;
@@ -61,7 +62,7 @@
     height: 25%;
     top: 67%;
     left: 25%;
-    z-index: 40;
+    z-index: 20;
 }
 .containercarsoul{
    position: relative; 
