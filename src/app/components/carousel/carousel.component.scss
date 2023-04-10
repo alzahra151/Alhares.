@@ -27,10 +27,10 @@
 }
 
 .carousel-control-prev{
-    left: 69%;
+    left: 63%;
 }
 .carousel-control-next{
-    right: 20%
+    right: 19%
 }
 .arrowIcon{
     font-size: large;
@@ -38,16 +38,25 @@
     background-color: aqua;
 }
 .carousel-control-prev-icon{
-    background-image: url("../../../assets/images/arraow2.png");
-    width: 75px; ;
-    height: 75px;
+    background-image: url("../../../assets/images/arraow.png");
+    width: 20px; ;
+    height: 5px;
+    transform: scale(-1);
+    position :relative;
   }
 .carousel-control-next-icon {
-    background-image: url("../../../assets/images/arrow.png");
-    width: 75px; ;
-    height: 75px;
-
+    background-image: url("../../../assets/images/arraow.png");
+    width: 20px; ;
+    height: 5px;
+    position :relative;
 }
+.carousel-control-next svg{
+    position:absolute;
+}
+.carousel-control-prev svg{
+    position:absolute;
+}
+
 .controlContainer{
     background-color: #070626;
     // border-bottom :1px solid 
@@ -75,26 +84,42 @@
     -o-transition: 0.1s ease-in-out left;
     transition: 0.1s ease-in-out left;
 }
-@media only screen and (max-width: 991.98px){
-   
-    .carousel-control-prev-icon{
-        background-image: url("../../../assets/images/arraow2.png");
-        width: 40px !important;
-        height: 40px !important;
-      }
-    .carousel-control-next-icon {
-        background-image: url("../../../assets/images/arrow.png");
-        width: 40px !important;
-        height: 40px !important;
-    
-    }
+@media only screen and (max-width: 991.98px){ 
     .carousel-control-prev{
-        left: 30%;
+        left: 62%;
     }
     .carousel-control-next{
-        right: 64%;
+        right: 18%
     }
-  
+}
+// @media only screen and (max-width: 570px){ 
+//     .carousel-control-prev{
+//         left: 62%;
+//     }
+//     .carousel-control-next{
+//         right: 18%
+//     }
+// }
+@media only screen and (max-width: 468px){ 
+    .carousel-control-prev{
+        left: 15%;
+    }
+    .carousel-control-next{
+        right: 59%
+    }
+    .carousel-control-next svg{
+       width:35;
+       height:35
+    }
+    .carousel-control-prev svg{
+        width:30;
+        height:30
+    }
+    .controlContainer{
+      
+
+        margin: 2px;
+    }
 }
 
   @media only screen and (max-width: 991.98px){

@@ -1,6 +1,6 @@
 @mixin card{
   background-repeat: no-repeat;
-  opacity: .2;
+  opacity: .1;
   text-shadow: 1px white;
   position: relative;
 //    transform: scale(.7);
@@ -16,6 +16,7 @@
 .servicCard2{
   background-image: url('../../../assets/images/services/DSC_8481.jpg');
  @include card;
+//  z-index: 10000;
  
 }
 .servicCard3{
@@ -40,13 +41,13 @@
 }
 
 .cardcontainer{
-    border-right:3px solid #88C8C8;
+    border-right:1px solid #88C8C8;
 
 }
 
 .hover{
     // width:350px;
-    height:350px;
+    height:400px;
 }
 
 .hover:hover .servicCard{
@@ -57,36 +58,43 @@
     transition: all 1s ease-in-out;
 }
 .hover:hover + .serviceIcon{
-    top:0%;
+    top:10%;
     width:15%;
     height:15%;
     transition-duration:50s;
     transition: all 1s ease-in-out;
 }
 .hover:hover~.servicName{
-    top:16%;
-    // font-size: 70%;
+    top:25%;
+    // font-size: 50%;
     transition: all 1s ease-in-out;
 }
  .servicName{
     position: absolute;
     color:white;
-    top:50%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 .serviceIcon{
      color:#88C8C8 !important;
      position: absolute;
-     top:10%;
-     left: 40%;
+     top: 35%;
+     left: 50%;
+     transform: translate(-50%, -50%);
      color:white;
-    width:30%;
-    height:30%
+    width:50%;
+    height:15%;
+    // align-items: center;
 }
-.serviceIconcontainer{
- 
-  width:50px;
-  height: 50px;
+.cardcontainer{
+  position: relative;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+  // width:50px;
+  // height: 50px;
 }
 .carousel-indicators {
   bottom: -15%;
@@ -148,8 +156,8 @@
     left: 0;
     color: white;
     // background-color: rgba(200, 200, 200, 0.5);
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height:100% ;
     -webkit-transition: all 400ms ease-out;
     -moz-transition: all 400ms ease-out;
     -o-transition: all 400ms ease-out;
@@ -168,6 +176,6 @@
   }
   .example .content:hover .text {
     opacity: 1;
-    transform: translateY(250px);
+    transform: translateY(400px);
     -webkit-transform: translateY(100px);
   }
