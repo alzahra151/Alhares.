@@ -1,7 +1,9 @@
 <div class="overlay"></div>
 <!-- <div class="navbar-container  m-0 p-0"  > -->
-<nav id="nav" class="navbar customNav navbar-expand-lg d-flex justify-content-center p-0 pb-3 m-0 text-center  opacity-100" [ngClass]="lang=='ar'?'rtl':'ltr'" 
-  [ngClass]="navbarVisible==true && currentScrollPosition>20?'colorNave':'removecolorNave'" *ngIf="navbarVisible">
+<nav id="nav"
+  class="navbar customNav navbar-expand-lg d-flex justify-content-center p-0 pb-3 m-0 text-center  opacity-100"
+  [ngClass]="lang=='ar'?'rtl':'ltr'"
+  [ngClass]="navbarVisible==true && currentScrollPosition>20?'colorNave ':'removecolorNave'" *ngIf="navbarVisible">
   <div class="container-fluid m-0 p-0 text-center navcontainer ">
 
 
@@ -46,8 +48,8 @@
           <a class="nav-link btn" (click)="swichLanguage()">{{"language" |translate}}</a>
         </li>
       </ul>
-      <div class="col-2 p-0">
-          <img class= "logo w-100"src="../../../assets/images/loggo3.png">
+      <div [ngClass]="navbarVisible==true && currentScrollPosition>20?'resizeLogo ':'col-2 p-0'">
+        <img class="logo w-100" src="../../../assets/images/loggo3.png">
 
       </div>
     </div>
@@ -55,9 +57,9 @@
   </div>
 
   <div class="col-2 p-0 d-lg-none logoContainer ">
-    <img class= "logo w-100" src="../../../assets/images/loggo3.png">
+    <img class="logo w-100" src="../../../assets/images/loggo3.png">
 
-</div>
+  </div>
 
 </nav>
 

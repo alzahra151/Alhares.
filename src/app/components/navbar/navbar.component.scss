@@ -137,9 +137,12 @@ width: 100%;
 .colorNave{
   background-color :#070626;
   z-index: 100000;
-
+  
   opacity:9;
   transition: all 2s ease-in-out;
+}
+.resizeLogo{
+  width: 10%;
 }
 // .removecolorNave{
 

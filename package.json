@@ -21,10 +21,12 @@
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "@types/aos": "^3.0.4",
+    "@types/typed.js": "^2.0.9",
     "aos": "^2.3.4",
     "jquery": "^3.6.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "typed.js": "^2.0.15",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {

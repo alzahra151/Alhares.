@@ -1,133 +1,172 @@
-<div class="container-fluid mt-5 ">
-    <h1 class="text-light"> {{"servicesName" | translate}}</h1>
+<div class="container-fluid mt-5 " [ngClass]="lang=='ar'?'rtl':'ltr'">
+    <h1 class="text-light mt-5 text-center"> {{"servicesName" | translate}}</h1>
     <div class="row">
-        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3 ">
-            <div class="hover example mb-3">
-                <div class="w-100 text-center  servicCard1 hover p-0">
+        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3 hover" (mouseenter)="onHover(6)">
+            <img class="thumb-img" src="../../../assets/images/services/DSC_8623.jpg" alt="Catz!" [ngClass]="isOpen6==true?'thumb-imgActive' :'thumb-img'">
 
-                </div>
-                <div class="content w-100">
-                    <p class="text">{{"serviceDescription6" |translate}}.
-                    </p>
-                </div>
-            </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class=" serviceIcon bi bi-mic"
-                viewBox="0 0 16 16">
-                <path
-                    d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h4a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h4v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
-                <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
-            </svg>
-            <h4 class="servicName">{{"services.servic6" | translate}}</h4>
-        </div>
-        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3 ">
-            <div>
-                <div class="hover example mb-3 servicCard2">
-                    <div class="w-100 text-center  servicCard2 hover p-0">
-
-                    </div>
-                    <div class="content w-100">
-                        <p class="text">{{"serviceDescription4" |translate}}.
+            <div #container6 class="d-flex flex-column justify-content-center servicecontain  "
+                [ngClass]="isOpen6==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(6)">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class=" serviceIcon bi bi-mic"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h4a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h4v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                    <path
+                        d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                </svg>
+                <h4 class="servicName">{{"services.servic6" | translate}}</h4>
+                <div class="thumb">
+                  
+                    <div class="thumb-gradient"></div>
+                    <div class="thumb-anim"   [ngClass]="isOpen6==true?'thumb-animActive' :'thumb-anim'">
+                   
+                        <p class="thumb-description"  [ngClass]="isOpen6==true?'thumb-descriptionActive' :'thumb-description'">
+                            {{"serviceDescription6" |translate}}
                         </p>
                     </div>
                 </div>
+            </div>
+          
+        </div>
+        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3 " (mouseenter)="onHover(4)">
+            <div>
+                <img class="thumb-img" src="../../../assets/images/services/DSC_8980.jpg" alt="Catz!" [ngClass]="isOpen4==true?'thumb-imgActive' :'thumb-img'">
 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="serviceIcon bi bi-camera-reels"
+                <div #container4 class="d-flex flex-column justify-content-center servicecontain  "
+                    [ngClass]="isOpen4==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(4)">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="serviceIcon bi bi-camera-reels"
+                        viewBox="0 0 16 16">
+                        <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+                        <path
+                            d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z" />
+                        <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                    </svg>
+                    <h4 class="servicName">{{"services.servic4" | translate}}</h4>
+                    <div class="thumb">
+                  
+                        <div class="thumb-gradient"></div>
+                        <div class="thumb-anim"   [ngClass]="isOpen4==true?'thumb-animActive' :'thumb-anim'">
+                       
+                            <p class="thumb-description"  [ngClass]="isOpen4==true?'thumb-descriptionActive' :'thumb-description'">
+                                {{"serviceDescription4" |translate}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4  p-0 cardcontainer col-md-6 mb-3" (mouseenter)="onHover(3)">
+            <img class="thumb-img" src="../../../assets/images/services/DSC_8532.jpg" alt="Catz!" [ngClass]="isOpen3==true?'thumb-imgActive' :'thumb-img'">
+
+            <div #container3 class="d-flex flex-column justify-content-center servicecontain  "
+                [ngClass]="isOpen3==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(3)">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="serviceIcon bi bi-door-open"
                     viewBox="0 0 16 16">
-                    <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z" />
+                    <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
                     <path
-                        d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z" />
-                    <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1h4V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z" />
                 </svg>
-                <h4 class="servicName">{{"services.servic4" | translate}}</h4>
-            </div>
-        </div>
-        <div class="col-lg-4  p-0 cardcontainer col-md-6 mb-3">
-            <div class="hover example mb-3">
-                <div class="w-100 text-center  servicCard4 hover p-0">
-
+                <h4 class="servicName">{{"services.servic3" | translate}}</h4>
+                <div class="thumb">
+                  
+                    <div class="thumb-gradient"></div>
+                    <div class="thumb-anim"   [ngClass]="isOpen3==true?'thumb-animActive' :'thumb-anim'">
+                   
+                        <p class="thumb-description"  [ngClass]="isOpen3==true?'thumb-descriptionActive' :'thumb-description'">
+                            {{"serviceDescription3" |translate}}
+                        </p>
+                    </div>
                 </div>
-                <div class="content w-100">
-                    <p class="text">{{"serviceDescription3" |translate}}
-                    </p>
-                </div>
             </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="serviceIcon bi bi-door-open"
-                viewBox="0 0 16 16">
-                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
-                <path
-                    d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1h4V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z" />
-            </svg>
-            <h4 class="servicName">{{"services.servic3" | translate}}</h4>
+           
         </div>
 
 
-        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3">
-            <div class="hover example mb-3">
-                <div class="w-100 text-center  servicCard6 hover p-0">
-
-                </div>
-                <div class="content w-100">
-                    <p class="text">{{"serviceDescription1" |translate}}</p>
+        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3 hover" (mouseenter)="onHover(1)">
+            <img class="thumb-img" src="../../../assets/images/services/DSC_8512.jpg" alt="Catz!" [ngClass]="isOpen1==true?'thumb-imgActive' :'thumb-img'">
+            <div #container1 class="d-flex flex-column justify-content-center servicecontain  "
+                [ngClass]="isOpen1==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(1)">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-router serviceIcon"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M5.525 3.025a3.5 3.5 0 0 1 4.95 0 .5.5 0 1 0 .707-.707 4.5 4.5 0 0 0-6.364 0 .5.5 0 0 0 .707.707Z" />
+                    <path
+                        d="M6.94 4.44a1.5 1.5 0 0 1 2.12 0 .5.5 0 0 0 .708-.708 2.5 2.5 0 0 0-3.536 0 .5.5 0 0 0 .707.707ZM2.5 11a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm4.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2.5.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm1.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Z" />
+                    <path
+                        d="M2.974 2.342a.5.5 0 1 0-.948.316L3.806 8H1.5A1.5 1.5 0 0 0 0 9.5v2A1.5 1.5 0 0 0 1.5 13H2a.5.5 0 0 0 .5.5h2A.5.5 0 0 0 5 13h6a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5h.5a1.5 1.5 0 0 0 1.5-1.5v-2A1.5 1.5 0 0 0 14.5 8h-2.306l1.78-5.342a.5.5 0 1 0-.948-.316L11.14 8H4.86L2.974 2.342ZM14.5 9a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h13Z" />
+                    <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z" />
+                </svg>
+                <h4 class="servicName">{{"services.servic1" | translate}}</h4>
+              
+                <div class="thumb">
+                  
+                    <div class="thumb-gradient"></div>
+                    <div class="thumb-anim text-center"   [ngClass]="isOpen1==true?'thumb-animActive' :'thumb-anim'">
+                   
+                        <p class="thumb-description text-center"  [ngClass]="isOpen1==true?'thumb-descriptionActive' :'thumb-description'">
+                            {{"serviceDescription1" |translate}}
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-router serviceIcon"
-                viewBox="0 0 16 16">
-                <path
-                    d="M5.525 3.025a3.5 3.5 0 0 1 4.95 0 .5.5 0 1 0 .707-.707 4.5 4.5 0 0 0-6.364 0 .5.5 0 0 0 .707.707Z" />
-                <path
-                    d="M6.94 4.44a1.5 1.5 0 0 1 2.12 0 .5.5 0 0 0 .708-.708 2.5 2.5 0 0 0-3.536 0 .5.5 0 0 0 .707.707ZM2.5 11a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm4.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2.5.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1Zm1.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Z" />
-                <path
-                    d="M2.974 2.342a.5.5 0 1 0-.948.316L3.806 8H1.5A1.5 1.5 0 0 0 0 9.5v2A1.5 1.5 0 0 0 1.5 13H2a.5.5 0 0 0 .5.5h2A.5.5 0 0 0 5 13h6a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5h.5a1.5 1.5 0 0 0 1.5-1.5v-2A1.5 1.5 0 0 0 14.5 8h-2.306l1.78-5.342a.5.5 0 1 0-.948-.316L11.14 8H4.86L2.974 2.342ZM14.5 9a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h13Z" />
-                <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z" />
-            </svg>
-
-
-            <h4 class="servicName">{{"services.servic1" | translate}}</h4>
+ 
         </div>
-        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3">
-            <div class="hover example mb-3">
-                <div class="w-100 text-center  servicCard3 hover p-0">
-
-                </div>
-                <div class="content w-100">
-                    <p class="text">{{"serviceDescription2" |translate}}
-                    </p>
+        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3" (mouseenter)="onHover(2)">
+            <img class="thumb-img" src="../../../assets/images/services/DSC_8477.jpg" alt="Catz!" [ngClass]="isOpen2==true?'thumb-imgActive' :'thumb-img'">
+            <div #container2 class="d-flex flex-column justify-content-center servicecontain  "
+                [ngClass]="isOpen2==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(2)">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="serviceIcon bi bi-alarm"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+                    <path
+                        d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+                </svg>
+                <h4 class="servicName">{{"services.servic2" | translate}}</h4>
+                <div class="thumb">
+                  
+                    <div class="thumb-gradient"></div>
+                    <div class="thumb-anim"   [ngClass]="isOpen2==true?'thumb-animActive' :'thumb-anim'">
+                   
+                        <p class="thumb-description"  [ngClass]="isOpen2==true?'thumb-descriptionActive' :'thumb-description'">
+                            {{"serviceDescription2" |translate}}
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="serviceIcon bi bi-alarm"
-                viewBox="0 0 16 16">
-                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
-                <path
-                    d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
-            </svg>
-            <h4 class="servicName">{{"services.servic2" | translate}}</h4>
+          
+          
         </div>
-        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3">
-            <div class="hover example mb-3">
-                <div class="w-100 text-center  servicCard5 hover p-0">
+        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3" (mouseenter)="onHover(5)">
+            <img class="thumb-img" src="../../../assets/images/services/DSC_8481.jpg" alt="Catz!" [ngClass]="isOpen5==true?'thumb-imgActive' :'thumb-img'">
 
-                </div>
-                <div class="content w-100">
-                    <p class="text">{{"serviceDescription5" |translate}}</p>
+            <div #container5 class="d-flex flex-column justify-content-center servicecontain  "
+                [ngClass]="isOpen5==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(5)">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="serviceIcon bi bi-broadcast-pin"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8z" />
+                </svg>
+                <h4 class="servicName">{{"services.servic5" | translate}}</h4>
+                <div class="thumb">
+                  
+                    <div class="thumb-gradient"></div>
+                    <div class="thumb-anim"   [ngClass]="isOpen5==true?'thumb-animActive' :'thumb-anim'">
+                   
+                        <p class="thumb-description"  [ngClass]="isOpen5==true?'thumb-descriptionActive' :'thumb-description'">
+                            {{"serviceDescription5" |translate}}
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="serviceIcon bi bi-broadcast-pin"
-                viewBox="0 0 16 16">
-                <path
-                    d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8z" />
-            </svg>
-            <h4 class="servicName">{{"services.servic5" | translate}}</h4>
+           
         </div>
     </div>
 </div>
 
 
-<h1 class="text-light mt-5 text-center"> {{"servicesName" | translate}}</h1>
+
 
 
 
@@ -150,7 +189,7 @@
                                 <div class="w-100 text-center  servicCard1 hover p-0">
 
                                 </div>
-                                <div class="content w-100">
+                                <div class=" w-100">
                                     <p class="text">{{"serviceDescription6" |translate}}.
                                     </p>
                                 </div>
@@ -167,7 +206,7 @@
                                 <div class="w-100 text-center  servicCard2 hover p-0">
 
                                 </div>
-                                <div class="content w-100">
+                                <div class=" w-100">
                                     <p class="text">{{"serviceDescription4" |translate}}.
                                     </p>
                                 </div>
@@ -185,7 +224,7 @@
                                 <div class="w-100 text-center  servicCard4 hover p-0">
 
                                 </div>
-                                <div class="content w-100">
+                                <div class=" w-100">
                                     <p class="text">{{"serviceDescription3" |translate}}
                                     </p>
                                 </div>
@@ -206,7 +245,7 @@
                                 <div class="w-100 text-center  servicCard6 hover p-0">
 
                                 </div>
-                                <div class="content w-100">
+                                <div class=" w-100">
                                     <p class="text">{{"serviceDescription1" |translate}}</p>
                                 </div>
                             </div>
@@ -230,7 +269,7 @@
                                 <div class="w-100 text-center  servicCard3 hover p-0">
 
                                 </div>
-                                <div class="content w-100">
+                                <div class=" w-100">
                                     <p class="text">{{"serviceDescription2" |translate}}
                                     </p>
                                 </div>
@@ -250,7 +289,7 @@
                                 <div class="w-100 text-center  servicCard5 hover p-0">
 
                                 </div>
-                                <div class="content w-100">
+                                <div class=" w-100">
                                     <p class="text">{{"serviceDescription5" |translate}}</p>
                                 </div>
                             </div>
