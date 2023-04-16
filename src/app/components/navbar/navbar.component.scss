@@ -16,6 +16,9 @@ li a{
     color: #88C8C8;
     border-bottom: .5px solid #88C8C8;
 }
+.navbar-nav .nav-link{
+font-weight: bold;
+}
 @media (max-width: 991.98px){
   .navbar-nav .nav-link.active{
     color: #88C8C8;
