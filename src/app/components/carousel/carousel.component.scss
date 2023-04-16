@@ -36,15 +36,11 @@
        text-align:left
     }
 }
-.carousel{
-    overflow: visible;
-}
-.smallCarousel{
+
+.carouselSmall-inner{
     overflow: visible; 
 }
-.carousel-inner{
-    overflow: visible; 
-}
+
 .carousel-control-prev{
     left: 63%;
 }
@@ -79,7 +75,9 @@
 .controlContainer{
     background-color: #070626;
     // border-bottom :1px solid 
-    margin: 20px;
+    // margin: 20px;
+    // margin-top: 20px;
+    // margin-bottom: 20px;
 }
 .indicators{
     z-index: 5;
