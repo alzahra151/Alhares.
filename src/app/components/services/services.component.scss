@@ -2,7 +2,7 @@
 
 .cardcontainer{
     border-right:.5px solid #88C8C8;
-
+ overflow: hidden;
 }
 
 .hover{
@@ -31,13 +31,92 @@ z-index:30
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.1;
+  // opacity: 0.1;
+  backdrop-filter: blur(8px);
 }
-
+@mixin serviceImgCover{
+  backdrop-filter: blur(8px);
+  // filter: blur(8px);
+  -webkit-filter: blur(8px);
+transition:all 1s ease-in-out;
+overflow: hidden;
+  // /* Full height */
+  height: 100%;
+opacity:.6;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin serviceRemoveFilter{
+  backdrop-filter: blur(0)!important;
+  // filter: blur(8px);
+  -webkit-filter: blur(0)!important;
+transition:all 1s ease-in-out;
+  /* Full height */
+  font-weight: bold;
+  height: 100%;
+opacity:.8 !important;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgCover1{
+  background-image: url('../../../assets/images/services/DSC_8512.jpg');
+@include serviceImgCover;
+}
+.removeFilter1{
+  background-image: url('../../../assets/images/services/DSC_8532.jpg')!important;
+@include serviceRemoveFilter;
+}
+.imgCover2{
+  background-image: url('../../../assets/images/services/DSC_8532.jpg');
+@include serviceImgCover;
+}
+.removeFilter2{
+  background-image: url('../../../assets/images/services/DSC_8980.jpg')!important;
+@include serviceRemoveFilter;
+}
+.imgCover3{
+  background-image: url('../../../assets/images/services/DSC_8512.jpg');
+@include serviceImgCover;
+}
+.removeFilter3{
+  background-image: url('../../../assets/images/services/DSC_8532.jpg')!important;
+@include serviceRemoveFilter;
+}
+.imgCover4{
+  background-image: url('../../../assets/images/services/DSC_8512.jpg');
+@include serviceImgCover;
+}
+.removeFilter4{
+  background-image: url('../../../assets/images/services/DSC_8532.jpg')!important;
+@include serviceRemoveFilter;
+}
+.imgCover5{
+  background-image: url('../../../assets/images/services/DSC_8512.jpg');
+@include serviceImgCover;
+}
+.removeFilter5{
+  background-image: url('../../../assets/images/services/DSC_8623.jpg')!important;
+@include serviceRemoveFilter;
+}
+.imgCover6{
+  background-image: url('../../../assets/images/services/DSC_8532.jpg');
+@include serviceImgCover;
+}
+.removeFilter6{
+  background-image: url('../../../assets/images/services/DSC_8623.jpg')!important;
+@include serviceRemoveFilter;
+}
 .thumb-gradient {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.56) 100%);
+  backdrop-filter: blur(0);
+  // -webkit-filter: blur(8px);
 }
-
+.removeFilter{
+  backdrop-filter: blur(0);
+}
 .thumb-anim {
   margin-top: auto;  /* pushes all content to bottom */
   position: relative;
@@ -52,7 +131,8 @@ z-index:30
   transition: 0.5s;
   opacity: 0;
   flex: 1;
-  font-family:'lightFont'
+  font-family:'myFont';
+  font-weight: bold;
 }
 
 .thumb-author {
@@ -73,17 +153,20 @@ z-index:30
 .thumb-descriptionActive  {
   opacity: 1;
   transition:all 1s ease-in-out;
-  font-family:'lightFont'
+  font-family:'myFont'
 }
  .thumb-imgActive  {
   opacity: .8;
   transition:all 2s ease-in-out
 }
+.containeer{
+  overflow: hidden;
 
+}
 .servicecontain{
   position: absolute;
   align-items: center;
-  top:55%;
+  top:60%;
   // left:0%;
   width: 100%;
   // height: 70%;
@@ -95,8 +178,27 @@ z-index:30
       width: 20%;
     }
 }
+// servicecontain1{
+//   position: absolute;
+//   width: 100%;
+//   // top: 50%;
+//   // left: 50%;
+//   // transform: translate(-50%, -50%);
+//   svg{
+//     width: 20%;
+//   }
+// }
 .servicecontainonhover{	
-  top:53%;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  top:50%;
+  transition: all 1s ease-in-out;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  svg{
+    width: 20%;
+  }
 
 }
 
@@ -117,16 +219,35 @@ z-index:30
 .descrition{
 
   color :white;
-  font-family:'lightFont'
+  font-family:'myFont'
  
 }
 .cardcontainer{
   position: relative;
-
+  
 }
 .rtl{
   text-align:center;
 }
 .ltr{
   text-align:center;
+}
+@media screen  and (max-width:760px){
+  .hover{
+    border: 1px solid #88C8C8;
+  }
+  .thumb-anim{
+    transform: translateY(0);
+    transition:all 1s ease-in-out
+  }
+  
+  .servicecontain{
+    top: 50%;
+  }
+  
+  .thumb-description {
+    opacity: 1;
+    transition:all 1s ease-in-out;
+    font-family:'myFont'
+  }
 }

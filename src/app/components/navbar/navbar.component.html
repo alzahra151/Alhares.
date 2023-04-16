@@ -14,46 +14,47 @@
       <span [ngClass]="MenuIsopen==false? 'bi bi-list fs-1 menuIcon' : 'bi bi-x fs-3 menuIcon'"></span>
 
     </button>
-    <!-- <div id="overlay"></div> -->
-    <div class="collapse navbar-collapse  m-0 p-0 d-lg-flex justify-content-center flex-column" id="navbarNavDropdown">
-      <button class="navbar-toggler d-flex d-lg-none align-self-start closeBtn" (click)="openMenu()" type="button"
-        data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span [ngClass]="MenuIsopen==false? 'bi bi-list fs-3 menuIcon' : 'bi bi-x fs-3 menuIcon'"></span>
+    <!-- <div id="overlay" class=""  >  </div> -->
+      <div class="navbar-collapse collapse m-0 p-0 d-lg-flex justify-content-center flex-column"
+        id="navbarNavDropdown">
+        <button class="navbar-toggler d-flex d-lg-none align-self-start closeBtn" (click)="openMenu()" type="button"
+          data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span [ngClass]="MenuIsopen==false? 'bi bi-list fs-3 menuIcon' : 'bi bi-x fs-3 menuIcon'"></span>
 
-      </button>
+        </button>
 
-      <ul class="navbar-nav pt-4 mt-5 mt-lg-0">
-        <li class="nav-item m-1">
-          <a class="nav-link active" [routerLink]="['/']" aria-current="page">{{"Home" |translate}}</a>
-        </li>
-        <li class="nav-item m-1">
-          <a class="nav-link" [routerLink]="['/AboutUs']">{{"about Us" |translate}}</a>
-        </li>
-        <li class="nav-item m-1">
-          <a class="nav-link" [routerLink]="['/ContactUs']">{{"contactUs" |translate}}</a>
-        </li>
+        <ul class="navbar-nav pt-4 mt-5 mt-lg-0">
+          <li class="nav-item m-1">
+            <a class="nav-link active" [routerLink]="['/']" aria-current="page">{{"Home" |translate}}</a>
+          </li>
+          <li class="nav-item m-1">
+            <a class="nav-link" [routerLink]="['/AboutUs']">{{"about Us" |translate}}</a>
+          </li>
+          <li class="nav-item m-1">
+            <a class="nav-link" [routerLink]="['/ContactUs']">{{"contactUs" |translate}}</a>
+          </li>
 
-        <li class="nav-item m-1 dropdown">
-          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            {{"works" | translate}}
-          </a>
-          <ul class="dropdown-menu" data-aos="slide-down">
-            <li><a class="dropdown-item " [routerLink]="['/work' ,1]">{{"services.servic3"|translate}}</a></li>
-            <li><a class="dropdown-item" [routerLink]="['/work',2]">{{"services.servic4"|translate}}</a></li>
-            <li><a class="dropdown-item" [routerLink]="['/work' ,3]">{{"services.servic1"|translate}}</a></li>
-          </ul>
-        </li>
-        <li class="nav-item m-1">
-          <a class="nav-link btn" (click)="swichLanguage()">{{"language" |translate}}</a>
-        </li>
-      </ul>
-      <div [ngClass]="navbarVisible==true && currentScrollPosition>20?'resizeLogo ':'col-2 p-0'">
-        <img class="logo w-100" src="../../../assets/images/loggo3.png">
+          <li class="nav-item m-1 dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{"works" | translate}}
+            </a>
+            <ul class="dropdown-menu" data-aos="slide-down">
+              <li><a class="dropdown-item " [routerLink]="['/work' ,1]">{{"services.servic3"|translate}}</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/work',2]">{{"services.servic4"|translate}}</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/work' ,3]">{{"services.servic1"|translate}}</a></li>
+            </ul>
+          </li>
+          <li class="nav-item m-1">
+            <a class="nav-link btn" (click)="swichLanguage()">{{"language" |translate}}</a>
+          </li>
+        </ul>
+        <div [ngClass]="navbarVisible==true && currentScrollPosition>20?'resizeLogo ':'col-2 p-0'">
+          <img class="logo w-100" src="../../../assets/images/loggo3.png">
 
+        </div>
       </div>
-    </div>
-
+  
   </div>
 
   <div class="col-2 p-0 d-lg-none logoContainer ">

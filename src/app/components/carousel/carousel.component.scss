@@ -25,7 +25,26 @@
 .carousel-control-next{
     position: absolute;
 }
-
+.carousel-caption{
+    // position: absolute;
+    left:-110%;
+    top: 63%;
+    // width: 20%;
+    // background-color:aqua ;
+    z-index: 10000;
+    h5{
+       text-align:left
+    }
+}
+.carousel{
+    overflow: visible;
+}
+.smallCarousel{
+    overflow: visible; 
+}
+.carousel-inner{
+    overflow: visible; 
+}
 .carousel-control-prev{
     left: 63%;
 }
@@ -67,12 +86,13 @@
 }
 .smallCarousel{
     position: absolute;
-    width: 25%;
-    height: 25%;
-    top: 67%;
-    left: 25%;
+    width: 20%;
+    height: 20%;
+    top: 73%;
+    left: 22%;
     z-index: 20;
 }
+
 .containercarsoul{
    position: relative; 
 }

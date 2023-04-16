@@ -1,9 +1,8 @@
 <div class="container-fluid mt-5 " [ngClass]="lang=='ar'?'rtl':'ltr'">
     <h1 class="text-light mt-5 text-center"> {{"servicesName" | translate}}</h1>
-    <div class="row">
+    <div class="row p-3 p-md-0 containeer">
         <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3 hover" (mouseenter)="onHover(6)">
-            <img class="thumb-img" src="../../../assets/images/services/DSC_8623.jpg" alt="Catz!" [ngClass]="isOpen6==true?'thumb-imgActive' :'thumb-img'">
-
+            <div class="imgCover6 d-md-block d-none" [ngClass]="isOpen6==false?'imgCover6' :'removeFilter6'" ></div>
             <div #container6 class="d-flex flex-column justify-content-center servicecontain  "
                 [ngClass]="isOpen6==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(6)">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class=" serviceIcon bi bi-mic"
@@ -28,9 +27,8 @@
           
         </div>
         <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3  hover" (mouseenter)="onHover(4)">
-            <div>
-                <img class="thumb-img" src="../../../assets/images/services/DSC_8980.jpg" alt="Catz!" [ngClass]="isOpen4==true?'thumb-imgActive' :'thumb-img'">
-
+            
+                <div class="imgCover4 d-md-block d-none" [ngClass]="isOpen4==false?'imgCover4' :'removeFilter4'" ></div>
                 <div #container4 class="d-flex flex-column justify-content-center servicecontain  "
                     [ngClass]="isOpen4==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(4)">
 
@@ -54,11 +52,10 @@
                     </div>
                 </div>
                 
-            </div>
+           
         </div>
         <div class="col-lg-4  p-0 cardcontainer col-md-6 mb-3  hover" (mouseenter)="onHover(3)">
-            <img class="thumb-img" src="../../../assets/images/services/DSC_8532.jpg" alt="Catz!" [ngClass]="isOpen3==true?'thumb-imgActive' :'thumb-img'">
-
+            <div class="imgCover3 d-md-block d-none" [ngClass]="isOpen3==false?'imgCover3' :'removeFilter3'" ></div>
             <div #container3 class="d-flex flex-column justify-content-center servicecontain  "
                 [ngClass]="isOpen3==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(3)">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="serviceIcon bi bi-door-open"
@@ -83,9 +80,10 @@
         </div>
 
 
-        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3 hover" (mouseenter)="onHover(1)">
-            <img class="thumb-img" src="../../../assets/images/services/DSC_8512.jpg" alt="Catz!" [ngClass]="isOpen1==true?'thumb-imgActive' :'thumb-img'">
-            <div #container1 class="d-flex flex-column justify-content-center servicecontain  "
+        <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3 hover " (mouseenter)="onHover(1)">
+            <div class="imgCover1 d-md-block d-none" [ngClass]="isOpen1==false?'imgCover1' :'removeFilter1'" ></div>
+            <!-- <img class="thumb-img" src="../../../assets/images/services/DSC_8512.jpg" alt="Catz!" [ngClass]="isOpen1==true?'thumb-imgActive' :'thumb-img'"> -->
+            <div #container1 class="d-flex flex-column justify-content-center servicecontain1  "
                 [ngClass]="isOpen1==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(1)">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-router serviceIcon"
                     viewBox="0 0 16 16">
@@ -104,7 +102,7 @@
                     <div class="thumb-gradient"></div>
                     <div class="thumb-anim text-center"   [ngClass]="isOpen1==true?'thumb-animActive' :'thumb-anim'">
                    
-                        <p class="thumb-description text-center"  [ngClass]="isOpen1==true?'thumb-descriptionActive' :'thumb-description'">
+                        <p class="thumb-description text-center "  [ngClass]="isOpen1==true?'thumb-descriptionActive' :'thumb-description'">
                             {{"serviceDescription1" |translate}}
                         </p>
                     </div>
@@ -113,8 +111,7 @@
  
         </div>
         <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3  hover" (mouseenter)="onHover(2)">
-            <img class="thumb-img" src="../../../assets/images/services/DSC_8477.jpg" alt="Catz!" [ngClass]="isOpen2==true?'thumb-imgActive' :'thumb-img'">
-            <div #container2 class="d-flex flex-column justify-content-center servicecontain  "
+            <div class="imgCover2 d-md-block d-none" [ngClass]="isOpen2==false?'imgCover2' :'removeFilter2'" ></div>            <div #container2 class="d-flex flex-column justify-content-center servicecontain  "
                 [ngClass]="isOpen2==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(2)">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="serviceIcon bi bi-alarm"
                     viewBox="0 0 16 16">
@@ -139,8 +136,7 @@
           
         </div>
         <div class="col-lg-4 p-0 cardcontainer col-md-6 mb-3  hover" (mouseenter)="onHover(5)">
-            <img class="thumb-img" src="../../../assets/images/services/DSC_8481.jpg" alt="Catz!" [ngClass]="isOpen5==true?'thumb-imgActive' :'thumb-img'">
-
+            <div class="imgCover5 d-md-block d-none" [ngClass]="isOpen5==false?'imgCover5' :'removeFilter5'" ></div>
             <div #container5 class="d-flex flex-column justify-content-center servicecontain  "
                 [ngClass]="isOpen5==false?'servicecontain' :'servicecontainonhover'" (mouseenter)="onHover(5)">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="serviceIcon bi bi-broadcast-pin"

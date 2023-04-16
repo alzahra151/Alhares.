@@ -6,7 +6,10 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 
 const routes: Routes = [
   {path:"" ,component:HomeComponent},
-  {path:"work/:id" ,component:WorkDetailsComponent},
+  // {path:"work/:id" ,component:WorkDetailsComponent},
+ { path: 'work/:id',
+  loadChildren: () =>     import('./lazy-laoding/lazy-loading/lazy-loading.module')
+    .then(m => m.LazyLoadingModule)},
   {path:"ContactUs" ,component:ContactUsComponent}
 
 ];
