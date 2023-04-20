@@ -28,7 +28,14 @@
     -webkit-animation: cssload-spin 500ms infinite linear;
     -moz-animation: cssload-spin 500ms infinite linear;
   }
-  
+  .spinerLogo{
+    position: absolute;
+    // left: 48%;
+    // top: 40%;
+    // width: 63px;
+    // height: 63px;
+    // margin: 0 auto;
+  }
   @keyframes cssload-spin {
     100% {
       transform: rotate(360deg);

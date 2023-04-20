@@ -1,6 +1,10 @@
 .socialicon{
     color:#88C8C8
 }
+// .logo{
+//     background-color: #88C8C8;
+// }
 .logo{
-    background-color: #88C8C8;
-}
+    -webkit-filter: drop-shadow(0 0 10px #88C8C8);
+    filter: drop-shadow(0 0 5px #88C8C8)
+  }

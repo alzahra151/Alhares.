@@ -42,7 +42,7 @@ constructor(public translate: TranslateService, public language:LanguageService)
             '../../../assets/images/network/DSC_8721.jpg',
             '../../../assets/images/network/DSC_8744.jpg',],
           },
-          {id :4 ,name :"" ,
+          {id :4 ,name :"link" ,
     images:['../../../assets/images/nown/DSC_8397.jpg',
              '../../../assets/images/nown/DSC_8402.jpg',
             '../../../assets/images/nown/DSC_8445.jpg',
