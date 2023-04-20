@@ -6,15 +6,22 @@
     box-shadow: inset 0px 0px 10px  #E3F6FF;
     z-index: 1;
     filter: drop-shadow(0px 10px 10px  #E3F6FF);
+    object-fit: cover;
 }
 .ourworks{
     position:absolute;
     color:white;
     // background-color:#070626;
     z-index:10;
-    top:50%;
-    left:0%;
-    right:0%
+    // top:50%;
+    bottom: 10%;
+    // left:0%;
+    // right:0%;
+    top: 60%; transform: translateY(-50%);
+    text-align: right;
+}
+.workImg{
+    object-fit: cover;  
 }
 .navbar{
     position:absolute;
