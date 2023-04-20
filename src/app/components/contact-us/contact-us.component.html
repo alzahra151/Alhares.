@@ -3,48 +3,48 @@
   </div> -->
  <img class="coverImg w-100" style="max-height: 450px;" src="../../../assets/images/contact.jpg">
 
- <div class="row flex-column p-0 m-0" dir="ltr">
-    <div class="col-12"></div>
-    <div class="row text-light m-lg-5 m-1">
-        <div class="">
-            <h1>How can we help you?</h1>
-            <h3>Adress</h3>
+ <div class="row flex-column p-0 m-0" [ngClass]="lang=='ar'?'rtl':'ltr'">
+    <!-- <div class="col-12"></div> -->
+    <div class="row text-light mt-5 p-0 m-0">
+        <div class="col-lg-5 mt-5">
+            <h1>{{"help" | translate}}</h1>
+            <h4>{{"adress" | translate}}</h4>
             <h5>{{"address" |translate}}</h5>
-            <h3>Email</h3>
+            <h4>{{"emaile" |translate}}</h4>
             <h5>{{"email" |translate}}</h5>
-            <h3>Mobile</h3>
+            <h4>{{"mobile" |translate}}</h4>
             <h5>+966 13 844 0040</h5>
-            <h3>Mobile</h3>
+            <h4>{{"mobile" |translate}}</h4>
             <h5>+966 54 044 8470</h5>
         </div>
-        <div class="col-lg-5 p-lg-0 p-1">
-            <form class="pe-5 ">
+        <div class="col-lg-5 p-lg-0 mt-5">
+            <form class="p-0 m-0 ">
                 <div class="form-group ">
-                  <label for="exampleInputEmail1">* Your name </label>
+                  <label for="exampleInputEmail1">{{"name"| translate}} </label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">*Email address </label>
+                    <label for="exampleInputEmail1">{{"emailadress" |translate}} </label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">*Purpose </label>
+                    <label for="exampleInputEmail1">{{"purpose" |translate}}</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
                   </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">*Contact Number </label>
+                  <label for="exampleInputPassword1">{{"number" |translate}} </label>
                   <input type="number" class="form-control" id="exampleInputPassword1" >
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">*City </label>
+                    <label for="exampleInputPassword1">{{"city" |translate}} </label>
                     <input type="text" class="form-control" id="exampleInputPassword1" >
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">*Comment </label>
+                    <label for="exampleInputPassword1">{{"comment" |translate}} </label>
                    
                     <textarea class="form-control"></textarea>
                   </div>
-                <button type="submit" class="btn  ">Send </button>
+                <button type="submit" class="btn  ">{{"send"|translate}} </button>
               </form>
         </div>
     </div>

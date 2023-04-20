@@ -48,5 +48,17 @@
 "language":"العربية",
 "address":"Al-Firdous district, Dammam, Saudi Arabia,Prince Mohammad bin Fahad rd,Rawdh Al khuzama Tower",
 "email":"Sales@alhares.co",
-"otherServices":"We also offer you:"
+"otherServices":"We also offer you:",
+"help":"How can we help you?",
+"adress":"Address",
+"mobile":"Mobile ",
+"emaile":"Email",
+"name":"Your Name *",
+"emailadress":"Your Email Adress *",
+"purpose":"Purpose *",
+"number":"Contact Number *",
+"city":"City *",
+"comment":"Comment *",
+"send":"Send"
+
 }
