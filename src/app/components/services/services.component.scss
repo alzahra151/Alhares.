@@ -231,12 +231,14 @@ opacity:.8 !important;
 }
 .ltr{
   text-align:center;
- 
+ .hover{
+  height: 620px;
+ }
 }
 @media screen  and (max-width:760px){
   .hover{
     border: 1px solid #88C8C8;
-    height:auto;
+    // height:auto;
   }
   .thumb-anim{
     transform: translateY(0);

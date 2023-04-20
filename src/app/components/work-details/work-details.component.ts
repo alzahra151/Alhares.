@@ -37,14 +37,15 @@ export class WorkDetailsComponent implements OnInit {
           ]
         },
         {id :3 ,name :"Network Solutions",
-        images:['../../../assets/images/network/DSC_8336.webp',
+        images:[
         '../../../assets/images/network/DSC_8548.webp',
         '../../../assets/images/network/DSC_8744.webp',
         '../../../assets/images/network/DSC_8746.webp',
         '../../../assets/images/network/DSC_8562.webp',
         '../../../assets/images/network/DSC_8676.webp',
         // '../../../assets/images/network/DSC_8721.webp',
-        '../../../assets/images/network/DSC_8744.webp',],
+        '../../../assets/images/network/DSC_8744.webp',
+        '../../../assets/images/network/DSC_8336.webp',],
             },
             {id :4 ,name :"" ,
       images:['../../../assets/images/nown/DSC_8397.webp',
